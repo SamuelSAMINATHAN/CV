@@ -4,6 +4,33 @@ import { PDFViewer, Document, Page, View, Text, StyleSheet, Image, Link } from '
 import photo from '../public/photo.png';
 import qrCode from '../public/portfolio.png';
 
+// Importation des icônes
+import iconBureau from '../public/icons/bureau.png';
+import iconCompetence from '../public/icons/competence.png';
+import iconDev from '../public/icons/dev.png';
+import iconReseaux from '../public/icons/reseaux.png';
+import iconSoftSkills from '../public/icons/softskills.png';
+
+// Importation des nouvelles icônes
+import iconCertif from '../public/icons/certif.png';
+import iconFormation from '../public/icons/formation.png';
+import iconHobbys from '../public/icons/hobbys.png';
+import iconLangue from '../public/icons/langue.png';
+import iconPro from '../public/icons/pro.png';
+
+// Logos spécifiques
+import logoIsep from '../public/icons/logo_isep.png';
+import logoCapgemini from '../public/icons/Capgemini_Logo.svg.png';
+import logoTryHackMe from '../public/icons/Plateforme_TryHackMe.png';
+import logoRust from '../public/icons/Rust_programming_language_black_logo.svg.png';
+
+// Importation des icônes de contact
+import iconEmail from '../public/icons/email.png';
+import iconLink from '../public/icons/link.png';
+import iconLocation from '../public/icons/location.png';
+import iconPhone from '../public/icons/phone.png';
+import iconPort from '../public/icons/port.png';
+
 const styles = StyleSheet.create({
   viewer: { width: '100%', height: '100vh', border: 'none' },
   page: { backgroundColor: '#FFFFFF', flexDirection: 'column', fontFamily: 'Helvetica' },
@@ -72,6 +99,12 @@ const styles = StyleSheet.create({
   contactItem: {
     flexDirection: 'row',
     alignItems: 'center',
+    marginBottom: 2,
+  },
+  contactIcon: {
+    width: 10,
+    height: 10,
+    marginRight: 4,
   },
   bullet: {
     color: '#7D5BA6',
@@ -92,12 +125,12 @@ const styles = StyleSheet.create({
   sidebar: {
     width: '32%',
     backgroundColor: '#F9F9FB', 
-    padding: 18,
+    padding: '12 18', // Réduit le padding vertical de 18 à 12
     borderRight: '0.5pt solid #E2E8F0',
   },
   mainContent: {
     width: '68%',
-    padding: 18,
+    padding: '12 18', // Réduit le padding vertical de 18 à 12
   },
 
   // --- TYPOGRAPHIE ---
@@ -107,14 +140,14 @@ const styles = StyleSheet.create({
     color: '#7D5BA6',
     textTransform: 'uppercase',
     letterSpacing: 1.2,
-    marginTop: 12,
-    marginBottom: 6,
+    marginTop: 8, // Réduit de 12 à 8
+    marginBottom: 4, // Réduit de 6 à 4
     borderBottom: '0.5pt solid #F3EBF7',
     paddingBottom: 2,
   },
   itemTitle: { fontSize: 10, fontWeight: 'bold', color: '#1A202C' },
-  itemSub: { fontSize: 8, color: '#D6A681', marginBottom: 3, fontWeight: 'medium' },
-  itemBody: { fontSize: 8.5, color: '#4A5568', lineHeight: 1.4, marginBottom: 8 },
+  itemSub: { fontSize: 8, color: '#D6A681', marginBottom: 2, fontWeight: 'medium' }, // Réduit marginBottom de 3 à 2
+  itemBody: { fontSize: 8, color: '#4A5568', lineHeight: 1.4, marginBottom: 6 }, // Réduit fontSize de 8.5 à 8 et marginBottom de 8 à 6
   
   tagContainer: { flexDirection: 'row', flexWrap: 'wrap', gap: 5, marginBottom: 10 },
   tag: { 
@@ -124,7 +157,95 @@ const styles = StyleSheet.create({
     padding: '4 8', 
     borderRadius: 4,
     fontWeight: 'medium'
-  }
+  },
+
+  // --- NOUVEAUX STYLES COMPÉTENCES ---
+  competenceHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 8, // Augmenté de 4 à 8
+    marginTop: 10, // Augmenté de 4 à 10
+  },
+  competenceMainIcon: {
+    width: 15,
+    height: 15,
+    marginRight: 6,
+  },
+  competenceCategory: {
+    marginBottom: 10, // Augmenté de 6 à 10
+  },
+  skillCategoryHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 4, // Augmenté de 2 à 4
+  },
+  skillCategoryIcon: {
+    width: 12,
+    height: 12,
+    marginRight: 4,
+  },
+  skillCategoryTitle: {
+    fontSize: 8.5,
+    fontWeight: 'bold',
+    color: '#3D3D3D',
+  },
+  skillItem: {
+    marginLeft: 16,
+    marginBottom: 1,
+  },
+  skillLabel: {
+    fontSize: 7.5,
+    fontWeight: 'bold',
+    color: '#57606A',
+  },
+  skillValue: {
+    fontSize: 7.5,
+    color: '#4A5568',
+  },
+
+  // --- STYLES POUR LES TITRES DE SECTION AVEC ICÔNES ---
+  sectionHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 4,
+    marginBottom: 2,
+    borderBottom: '0.5pt solid #F3EBF7',
+    paddingBottom: 2,
+  },
+  sidebarSectionHeader: { // Nouveau style pour la barre de gauche uniquement
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 18, // Espacement généreux pour la barre latérale
+    marginBottom: 6,
+    borderBottom: '0.5pt solid #F3EBF7',
+    paddingBottom: 2,
+  },
+  sectionIcon: {
+    width: 12,
+    height: 12,
+    marginRight: 5,
+  },
+  sectionTitleNoBorder: {
+    fontSize: 9.5, // Réduit de 10 à 9.5
+    fontWeight: 'bold',
+    color: '#7D5BA6',
+    textTransform: 'uppercase',
+    letterSpacing: 1.1, // Réduit de 1.2 à 1.1
+  },
+
+  // --- STYLES POUR LES LOGOS D'ENTREPRISE/ÉCOLE ---
+  itemHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between', // Logos à droite
+    marginBottom: 2,
+  },
+  logo: {
+    width: 32, // Agrandissement de 22 à 32
+    height: 32, // Agrandissement de 22 à 32
+    marginLeft: 8,
+    objectFit: 'contain',
+  },
   
 });
 
@@ -142,31 +263,31 @@ const MyCV = () => (
         
         <View style={styles.headerRight}>
           <Text style={styles.searchTitle}>Analyste Cyber (SOC / Pentest)</Text>
-          <Text style={styles.statusTag}>Étudiant Ingénieur ISEP</Text>
+          <Text style={styles.statusTag}>Recherche alternance de deux ans (septembre 2026 – août 2028)</Text>
           <Text style={styles.searchDescription}>
-            Étudiant en cycle ingénieur à l'Isep, je recherche une alternance de deux ans (septembre 2026 – août 2028) spécialisée en cybersécurité.
+          Passionné par la cybersécurité et par l'informatique, je suis un étudiant motivé, rigoureux et prêt à m'investir pleinement pour relever de nouveaux défis.
+
           </Text>
           
-<View style={styles.contactGrid}>
-            {/* Remplacement des emojis par des puces typographiques sûres */}
+          <View style={styles.contactGrid}>
             <View style={styles.contactItem}>
-                <Text style={styles.bullet}>•</Text>
-                <Text style={styles.contactText}>Paris, France</Text>
+                <Image style={styles.contactIcon} src={iconLocation} />
+                <Text style={styles.contactText}>Paris, Île-de-France</Text>
             </View>
             <View style={styles.contactItem}>
-                <Text style={styles.bullet}>•</Text>
+                <Image style={styles.contactIcon} src={iconPhone} />
                 <Text style={styles.contactText}>+33 6 18 66 66 60</Text>
             </View>
             <View style={styles.contactItem}>
-                <Text style={styles.bullet}>•</Text>
+                <Image style={styles.contactIcon} src={iconEmail} />
                 <Text style={styles.contactText}>samuel.saminathan@eleve.isep.fr</Text>
             </View>
             <View style={styles.contactItem}>
-                <Text style={styles.bullet}>•</Text>
+                <Image style={styles.contactIcon} src={iconLink} />
                 <Text style={styles.contactText}>linkedin.com/in/samuel-saminathan</Text>
             </View>
             <View style={styles.contactItem}>
-                <Text style={styles.bullet}>•</Text>
+                <Image style={styles.contactIcon} src={iconPort} />
                 <Text style={styles.contactText}>samuelsaminathan.github.io</Text>
             </View>
           </View>
@@ -178,20 +299,78 @@ const MyCV = () => (
 
         
         <View style={styles.sidebar}>
-          <Text style={styles.sectionTitle}>Hard Skills</Text>
-          <View style={styles.tagContainer}>
-            {['Python', 'Java', 'C', 'SQL', 'Bash', 'Wireshark', 'Suricata', 'Wazuh', 'Kali Linux', 'React', 'Node.js'].map(s => (
-              <Text key={s} style={styles.tag}>{s}</Text>
-            ))}
+          {/* Section Compétences avec icône principale */}
+          <View style={styles.competenceHeader}>
+            <Image src={iconCompetence} style={styles.competenceMainIcon} />
+            <Text style={styles.sectionTitle}>Compétences</Text>
           </View>
 
-          <Text style={styles.sectionTitle}>Soft Skills</Text>
-          <Text style={styles.itemBody}>Esprit analytique, Rigueur, Communication, Adaptabilité, Travail en équipe.</Text>
+          {/* Systèmes & Réseaux */}
+          <View style={styles.competenceCategory}>
+            <View style={styles.skillCategoryHeader}>
+              <Image src={iconReseaux} style={styles.skillCategoryIcon} />
+              <Text style={styles.skillCategoryTitle}>Systèmes & Réseaux</Text>
+            </View>
+            <View style={styles.skillItem}>
+              <Text><Text style={styles.skillLabel}>OS : </Text><Text style={styles.skillValue}>Linux, Bash, PowerShell, VirtualBox</Text></Text>
+            </View>
+            <View style={styles.skillItem}>
+              <Text><Text style={styles.skillLabel}>Sécurité & Réseau : </Text><Text style={styles.skillValue}>Wireshark, Wazuh, pfSense</Text></Text>
+            </View>
+          </View>
 
-          <Text style={styles.sectionTitle}>Langues</Text>
+          {/* Développement */}
+          <View style={styles.competenceCategory}>
+            <View style={styles.skillCategoryHeader}>
+              <Image src={iconDev} style={styles.skillCategoryIcon} />
+              <Text style={styles.skillCategoryTitle}>Développement</Text>
+            </View>
+            <View style={styles.skillItem}>
+              <Text><Text style={styles.skillLabel}>Langages : </Text><Text style={styles.skillValue}>Python, Rust, Java, PHP, SQL</Text></Text>
+            </View>
+            <View style={styles.skillItem}>
+              <Text><Text style={styles.skillLabel}>Web : </Text><Text style={styles.skillValue}>React, HTML, CSS</Text></Text>
+            </View>
+          </View>
+
+          {/* Bureautique & Outils */}
+          <View style={styles.competenceCategory}>
+            <View style={styles.skillCategoryHeader}>
+              <Image src={iconBureau} style={styles.skillCategoryIcon} />
+              <Text style={styles.skillCategoryTitle}>Bureautique & Outils</Text>
+            </View>
+            <View style={styles.skillItem}>
+              <Text><Text style={styles.skillLabel}>Logiciels : </Text><Text style={styles.skillValue}>Suite Office, LaTeX</Text></Text>
+            </View>
+          </View>
+
+          {/* Soft Skills */}
+          <View style={styles.competenceCategory}>
+            <View style={styles.skillCategoryHeader}>
+              <Image src={iconSoftSkills} style={styles.skillCategoryIcon} />
+              <Text style={styles.skillCategoryTitle}>Soft Skills</Text>
+            </View>
+            <View style={styles.skillItem}>
+              <Text><Text style={styles.skillLabel}>Analyse : </Text><Text style={styles.skillValue}>Esprit analytique, Rigueur, Curiosité</Text></Text>
+            </View>
+            <View style={styles.skillItem}>
+              <Text><Text style={styles.skillLabel}>Relationnel : </Text><Text style={styles.skillValue}>Travail en équipe, Communication</Text></Text>
+            </View>
+            <View style={styles.skillItem}>
+              <Text><Text style={styles.skillLabel}>Adaptabilité : </Text><Text style={styles.skillValue}>Fiabilité, Adaptabilité</Text></Text>
+            </View>
+          </View>
+
+          <View style={styles.sidebarSectionHeader}>
+            <Image src={iconLangue} style={styles.sectionIcon} />
+            <Text style={styles.sectionTitleNoBorder}>Langues</Text>
+          </View>
           <Text style={styles.itemBody}>Français : maternel{"\n"}Anglais : C1 (Courant){"\n"}Allemand : B1</Text>
 
-          <Text style={styles.sectionTitle}>Certifications</Text>
+          <View style={styles.sidebarSectionHeader}>
+            <Image src={iconCertif} style={styles.sectionIcon} />
+            <Text style={styles.sectionTitleNoBorder}>Certifications</Text>
+          </View>
           <Text style={styles.itemTitle}>TOEIC</Text>
           <Text style={styles.itemSub}>Score : 945/990 (Niveau C1)</Text>
           
@@ -205,7 +384,10 @@ const MyCV = () => (
 
           <Text style={styles.itemTitle}></Text>
 
-          <Text style={styles.sectionTitle}>Centres d'intérêt</Text>
+          <View style={styles.sidebarSectionHeader}>
+            <Image src={iconHobbys} style={styles.sectionIcon} />
+            <Text style={styles.sectionTitleNoBorder}>Centres d'intérêt</Text>
+          </View>
           <Text style={styles.itemBody}>Développement de jeux vidéo (Godot), Cinéma classique (A. Kurosawa), Dessin, Randonnée, Veille technologique.</Text>
 
           <View style={{ marginTop: 'auto', alignItems: 'center', paddingTop: 10 }}>
@@ -218,9 +400,15 @@ const MyCV = () => (
         {/* COLONNE DROITE (Expériences & Formation) */}
         <View style={styles.mainContent}>
 
-                    <Text style={styles.sectionTitle}>Formation</Text>
+          <View style={styles.sectionHeader}>
+            <Image src={iconFormation} style={styles.sectionIcon} />
+            <Text style={styles.sectionTitleNoBorder}>Formation</Text>
+          </View>
           <View>
-            <Text style={styles.itemTitle}>ISEP - École d'ingénieurs du numérique</Text>
+            <View style={styles.itemHeader}>
+              <Text style={styles.itemTitle}>ISEP - École d'ingénieurs du numérique</Text>
+              <Image src={logoIsep} style={styles.logo} />
+            </View>
             <Text style={styles.itemSub}>Cycle Ingénieur • 2023 - 2028</Text>
             <View style={{ marginLeft: 8, marginTop: 4 }}>
               <Text style={styles.itemTitle}>• Laboratoire Simulation DDoS & Détection</Text>
@@ -242,7 +430,10 @@ const MyCV = () => (
           </View>
 
           
-          <Text style={styles.sectionTitle}>Expériences Professionnelles</Text>
+          <View style={styles.sectionHeader}>
+            <Image src={iconPro} style={styles.sectionIcon} />
+            <Text style={styles.sectionTitleNoBorder}>Expériences Professionnelles</Text>
+          </View>
           <View>
             <Text style={styles.itemTitle}>Développeur Web (Stage) - Cokomasala</Text>
             <Text style={styles.itemSub}>Inde</Text>
@@ -259,9 +450,15 @@ const MyCV = () => (
             </Text>
           </View>
 
-          <Text style={styles.sectionTitle}>Hackathons</Text>
+          <View style={styles.sectionHeader}>
+            <Image src={iconPro} style={styles.sectionIcon} />
+            <Text style={styles.sectionTitleNoBorder}>Hackathons</Text>
+          </View>
           <View>
-            <Text style={styles.itemTitle}>Silicon Days - Capgemini</Text>
+            <View style={styles.itemHeader}>
+              <Text style={styles.itemTitle}>Silicon Days - Capgemini</Text>
+              <Image src={logoCapgemini} style={styles.logo} />
+            </View>
             <Text style={styles.itemSub}>Sujet : L'IA avant,pendant et après un incident cyber</Text>
             <Text style={styles.itemBody}>
               • Développement d'un Auto-encodeur pour la détection d'anomalies avec Data Cleaning avancé pour l'entraînement avec données eBPF.{"\n"}
@@ -270,9 +467,15 @@ const MyCV = () => (
             </Text>
           </View>
 
-          <Text style={styles.sectionTitle}>Projets personnels</Text>
+          <View style={styles.sectionHeader}>
+            <Image src={iconCompetence} style={styles.sectionIcon} />
+            <Text style={styles.sectionTitleNoBorder}>Projets personnels</Text>
+          </View>
           <View>
-            <Text style={styles.itemTitle}>Formation en cybersécurité -- TryHackMe</Text>
+            <View style={styles.itemHeader}>
+              <Text style={styles.itemTitle}>Formation en cybersécurité -- TryHackMe</Text>
+              <Image src={logoTryHackMe} style={styles.logo} />
+            </View>
             <Link src="https://tryhackme.com/p/Samuel404" style={{ ...styles.itemSub, color: '#7D5BA6', textDecoration: 'underline' }}>
               tryhackme.com/p/Samuel404
             </Link>
@@ -282,7 +485,10 @@ const MyCV = () => (
           </View>
 
           <View>
-            <Text style={styles.itemTitle}>Programmation Système Rust -- Google (Comprehensive Rust)</Text>
+            <View style={styles.itemHeader}>
+              <Text style={styles.itemTitle}>Programmation Système Rust -- Google (Comprehensive Rust)</Text>
+              <Image src={logoRust} style={styles.logo} />
+            </View>
             <Link src="https://google.github.io/comprehensive-rust/" style={{ ...styles.itemSub, color: '#7D5BA6', textDecoration: 'underline' }}>
               google.github.io/comprehensive-rust
             </Link>
@@ -290,6 +496,7 @@ const MyCV = () => (
               Formation intensive sur la sécurité mémoire (Ownership, Borrowing), la gestion des ressources et la programmation concurrente sécurisée. Application des standards de développement utilisés chez Google pour les systèmes critiques.
             </Text>
           </View>
+          
           
         </View>
       </View>
