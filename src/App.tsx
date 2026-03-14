@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     width: 80,
     height: 80,
     borderRadius: 40, // Moitié de la taille pour un cercle parfait
-    border: '1.5pt solid #7D5BA6',
+    border: '1.5pt solid #1E40AF',
     marginBottom: 5,
     // --- LES DEUX LIGNES CI-DESSOUS RÉPARENT TA PHOTO ---
     objectFit: 'cover', 
@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
   searchTitle: {
     fontSize: 20, // Augmenté de 19 à 20
     fontWeight: 'bold',
-    color: '#7D5BA6', 
+    color: '#1E40AF', 
     textTransform: 'uppercase',
     marginBottom: 2,
   },
@@ -107,7 +107,7 @@ const styles = StyleSheet.create({
     marginRight: 4,
   },
   bullet: {
-    color: '#7D5BA6',
+    color: '#1E40AF',
     fontSize: 10,
     marginRight: 3,
     fontWeight: 'bold',
@@ -137,7 +137,7 @@ const styles = StyleSheet.create({
   sectionTitle: {
     fontSize: 11, // Augmenté de 10.5 à 11
     fontWeight: 'bold',
-    color: '#7D5BA6',
+    color: '#1E40AF',
     textTransform: 'uppercase',
     letterSpacing: 1.2,
     marginTop: 6, // Réduit de 8 à 6
@@ -152,7 +152,7 @@ const styles = StyleSheet.create({
   tagContainer: { flexDirection: 'row', flexWrap: 'wrap', gap: 5, marginBottom: 6 }, // Réduit de 10 à 6
   tag: { 
     backgroundColor: '#F3EBF7', 
-    color: '#7D5BA6', 
+    color: '#1E40AF', 
     fontSize: 8, 
     padding: '4 8', 
     borderRadius: 4,
@@ -228,7 +228,7 @@ const styles = StyleSheet.create({
   sectionTitleNoBorder: {
     fontSize: 10.5, // Augmenté de 10 à 10.5
     fontWeight: 'bold',
-    color: '#7D5BA6',
+    color: '#1E40AF',
     textTransform: 'uppercase',
     letterSpacing: 1.1, 
   },
@@ -389,7 +389,7 @@ const MyCV = () => (
 
           <View style={{ marginTop: 'auto', alignItems: 'center', paddingTop: 10 }}>
              <Image src={qrCode} style={{ width: 80, height: 80, border: '0.5pt solid #E2E8F0', borderRadius: 4 }} />
-             <Text style={{ fontSize: 7, color: '#7D5BA6', marginTop: 4, textAlign: 'center' }}>Portfolio avec tous mes projets détaillés</Text>
+             <Text style={{ fontSize: 7, color: '#1E40AF', marginTop: 4, textAlign: 'center' }}>Portfolio avec tous mes projets détaillés</Text>
           </View>
         </View>
 
@@ -433,7 +433,7 @@ const MyCV = () => (
           </View>
           <View>
             <Text style={styles.itemTitle}>Développeur Web (Stage) - Cokomasala</Text>
-            <Text style={styles.itemSub}>Inde</Text>
+            <Text style={styles.itemSub}>Mars. 2025 - Juillet 2025 •Inde</Text>
             <Text style={styles.itemBody}>
               • Conception et développement d'un site vitrine pour l'entreprise.{"\n"}
               • Technologies : HTML, CSS, JavaScript et intégration de contenu.
@@ -458,7 +458,7 @@ const MyCV = () => (
             </View>
             <Text style={styles.itemSub}>Sujet : L'IA avant,pendant et après un incident cyber</Text>
             <Text style={styles.itemBody}>
-              • Développement d'un Auto-encodeur pour la détection d'anomalies avec Data Cleaning avancé pour l'entraînement avec données eBPF.{"\n"}
+              • Développement d'un Auto-encodeur pour la détection d'anomalies avec Data Cleaning avancé pour l'entraînement de données eBPF.{"\n"}
               • Corrélation via GNN pour le mapping MITRE ATT&CK et export SIEM vers Wazuh. {"\n"}
               • Technologies : PyTorch, Machine Learning, eBPF, Wazuh, SIEM.
             </Text>
@@ -473,7 +473,7 @@ const MyCV = () => (
               <Text style={styles.itemTitle}>Formation en cybersécurité -- TryHackMe</Text>
               <Image src={logoTryHackMe} style={styles.logo} />
             </View>
-            <Link src="https://tryhackme.com/p/Samuel404" style={{ ...styles.itemSub, color: '#7D5BA6', textDecoration: 'underline' }}>
+            <Link src="https://tryhackme.com/p/Samuel404" style={{ ...styles.itemSub, color: '#1E40AF', textDecoration: 'underline' }}>
               tryhackme.com/p/Samuel404
             </Link>
             <Text style={styles.itemBody}>
@@ -486,7 +486,7 @@ const MyCV = () => (
               <Text style={styles.itemTitle}>Programmation Système Rust -- Google (Comprehensive Rust)</Text>
               <Image src={logoRust} style={styles.logo} />
             </View>
-            <Link src="https://google.github.io/comprehensive-rust/" style={{ ...styles.itemSub, color: '#7D5BA6', textDecoration: 'underline' }}>
+            <Link src="https://google.github.io/comprehensive-rust/" style={{ ...styles.itemSub, color: '#1E40AF', textDecoration: 'underline' }}>  
               google.github.io/comprehensive-rust
             </Link>
             <Text style={styles.itemBody}>
