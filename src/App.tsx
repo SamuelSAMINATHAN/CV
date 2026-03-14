@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     backgroundColor: '#F9F9FB', 
     borderBottom: '1pt solid #E2E8F0',
-    padding: '15 30', // Réduit de 20 à 15
+    padding: '10 30', // Réduit de 15 à 10
     alignItems: 'center',
   },
   photoContainer: {
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
     objectPosition: 'center',
   },
   nameSubtle: {
-    fontSize: 9.5, // Augmenté de 9 à 9.5
+    fontSize: 10, // Augmenté de 9.5 à 10
     fontWeight: 'bold',
     color: '#3D3D3D',
     textAlign: 'center',
@@ -69,22 +69,22 @@ const styles = StyleSheet.create({
     paddingLeft: 25,
   },
   searchTitle: {
-    fontSize: 19, // Augmenté de 18 à 19
+    fontSize: 20, // Augmenté de 19 à 20
     fontWeight: 'bold',
     color: '#7D5BA6', 
     textTransform: 'uppercase',
     marginBottom: 2,
   },
   statusTag: {
-    fontSize: 10.5, // Augmenté de 10 à 10.5
+    fontSize: 11, // Augmenté de 10.5 à 11
     color: '#D6A681',
     fontWeight: 'medium',
     marginBottom: 4,
   },
   searchDescription: {
-    fontSize: 9, // Augmenté de 8.5 à 9
+    fontSize: 9.5, // Augmenté de 9 à 9.5
     color: '#4A5568',
-    marginBottom: 8,
+    marginBottom: 6, // Réduit de 8 à 6
     lineHeight: 1.3,
     maxWidth: '90%',
   },
@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   contactText: {
-    fontSize: 8, // Augmenté de 7.5 à 8
+    fontSize: 8.5, // Augmenté de 8 à 8.5
     color: '#57606A',
   },
 
@@ -125,31 +125,31 @@ const styles = StyleSheet.create({
   sidebar: {
     width: '32%',
     backgroundColor: '#F9F9FB', 
-    padding: '10 18', // Réduit de 12 à 10
+    padding: '6 18', // Réduit de 10 à 6
     borderRight: '0.5pt solid #E2E8F0',
   },
   mainContent: {
     width: '68%',
-    padding: '10 18', // Réduit de 12 à 10
+    padding: '6 18', // Réduit de 10 à 6
   },
 
   // --- TYPOGRAPHIE ---
   sectionTitle: {
-    fontSize: 10.5, // Augmenté de 10 à 10.5
+    fontSize: 11, // Augmenté de 10.5 à 11
     fontWeight: 'bold',
     color: '#7D5BA6',
     textTransform: 'uppercase',
     letterSpacing: 1.2,
-    marginTop: 8, 
-    marginBottom: 4, 
+    marginTop: 6, // Réduit de 8 à 6
+    marginBottom: 3, // Réduit de 4 à 3
     borderBottom: '0.5pt solid #F3EBF7',
     paddingBottom: 2,
   },
-  itemTitle: { fontSize: 10.5, fontWeight: 'bold', color: '#1A202C' }, // Augmenté de 10 à 10.5
-  itemSub: { fontSize: 8.5, color: '#D6A681', marginBottom: 2, fontWeight: 'medium' }, // Augmenté de 8 à 8.5
-  itemBody: { fontSize: 8.5, color: '#4A5568', lineHeight: 1.4, marginBottom: 6 }, // Augmenté de 8 à 8.5
+  itemTitle: { fontSize: 11, fontWeight: 'bold', color: '#1A202C' }, // Augmenté de 10.5 à 11
+  itemSub: { fontSize: 9, color: '#D6A681', marginBottom: 2, fontWeight: 'medium' }, // Augmenté de 8.5 à 9
+  itemBody: { fontSize: 9, color: '#4A5568', lineHeight: 1.4, marginBottom: 5 }, // Augmenté de 8.5 à 9 et marginBottom réduit de 6 à 5
   
-  tagContainer: { flexDirection: 'row', flexWrap: 'wrap', gap: 5, marginBottom: 10 },
+  tagContainer: { flexDirection: 'row', flexWrap: 'wrap', gap: 5, marginBottom: 6 }, // Réduit de 10 à 6
   tag: { 
     backgroundColor: '#F3EBF7', 
     color: '#7D5BA6', 
@@ -163,8 +163,8 @@ const styles = StyleSheet.create({
   competenceHeader: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 8, 
-    marginTop: 8, // Réduit de 10 à 8
+    marginBottom: 6, 
+    marginTop: 6, // Réduit de 8 à 6
   },
   competenceMainIcon: {
     width: 15,
@@ -172,12 +172,12 @@ const styles = StyleSheet.create({
     marginRight: 6,
   },
   competenceCategory: {
-    marginBottom: 10, 
+    marginBottom: 8, // Réduit de 10 à 8
   },
   skillCategoryHeader: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 4, 
+    marginBottom: 2, 
   },
   skillCategoryIcon: {
     width: 12,
@@ -185,7 +185,7 @@ const styles = StyleSheet.create({
     marginRight: 4,
   },
   skillCategoryTitle: {
-    fontSize: 9, // Augmenté de 8.5 à 9
+    fontSize: 9.5, // Augmenté de 9 à 9.5
     fontWeight: 'bold',
     color: '#3D3D3D',
   },
@@ -194,12 +194,12 @@ const styles = StyleSheet.create({
     marginBottom: 1,
   },
   skillLabel: {
-    fontSize: 8, // Augmenté de 7.5 à 8
+    fontSize: 8.5, // Augmenté de 8 à 8.5
     fontWeight: 'bold',
     color: '#57606A',
   },
   skillValue: {
-    fontSize: 8, // Augmenté de 7.5 à 8
+    fontSize: 8.5, // Augmenté de 8 à 8.5
     color: '#4A5568',
   },
 
@@ -207,7 +207,7 @@ const styles = StyleSheet.create({
   sectionHeader: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginTop: 3, // Réduit de 4 à 3
+    marginTop: 2, // Réduit de 3 à 2
     marginBottom: 2, 
     borderBottom: '0.5pt solid #F3EBF7',
     paddingBottom: 2,
@@ -215,8 +215,8 @@ const styles = StyleSheet.create({
   sidebarSectionHeader: { 
     flexDirection: 'row',
     alignItems: 'center',
-    marginTop: 14, // Réduit de 18 à 14 pour gagner de l'espace pour le texte plus grand
-    marginBottom: 6,
+    marginTop: 10, // Réduit de 14 à 10
+    marginBottom: 4, // Réduit de 6 à 4
     borderBottom: '0.5pt solid #F3EBF7',
     paddingBottom: 2,
   },
@@ -226,7 +226,7 @@ const styles = StyleSheet.create({
     marginRight: 5,
   },
   sectionTitleNoBorder: {
-    fontSize: 10, // Augmenté de 9.5 à 10
+    fontSize: 10.5, // Augmenté de 10 à 10.5
     fontWeight: 'bold',
     color: '#7D5BA6',
     textTransform: 'uppercase',
@@ -373,9 +373,6 @@ const MyCV = () => (
           </View>
           <Text style={styles.itemTitle}>TOEIC</Text>
           <Text style={styles.itemSub}>Score : 945/990 (Niveau C1)</Text>
-          
-          <Text style={styles.itemTitle}>CompTIA Security+</Text>
-          <Text style={styles.itemSub}>En préparation</Text>
 
           <Text style={styles.itemTitle}>Certificat Voltaire</Text>
           <Text style={styles.itemSub}>Score : 707/1000</Text>
@@ -410,12 +407,12 @@ const MyCV = () => (
               <Image src={logoIsep} style={styles.logo} />
             </View>
             <Text style={styles.itemSub}>Cycle Ingénieur • 2023 - 2028</Text>
+            <Text style={{ ...styles.itemBody, marginBottom: 4 }}>
+              Formation d’ingénieur généraliste du numérique incluant le développement Web, l'algorithmique, les réseaux, la cybersécurité et l'électronique, complétée par une solide base en gestion de projet et sciences des données. Projet notable : 
+            </Text>
             <View style={{ marginLeft: 8, marginTop: 4 }}>
               <Text style={styles.itemTitle}>• Laboratoire Simulation DDoS & Détection</Text>
               <Text style={{ ...styles.itemBody, marginBottom: 2 }}>Simulation d'attaques (L3-L7) sur réseau isolé (Kali, Metasploitable) avec détection via Suricata et Wazuh.</Text>
-
-              <Text style={styles.itemTitle}>• Encryptor AES-256 (Langage C)</Text>
-              <Text style={{ ...styles.itemBody, marginBottom: 2 }}>Outil de chiffrement/déchiffrement de fichiers garantissant la confidentialité des données.</Text>
 
               <Text style={styles.itemTitle}>• Portefeuille Numérique (Java)</Text>
               <Text style={{ ...styles.itemBody, marginBottom: 2 }}>Application de gestion de portefeuille avec historique de transactions sécurisées.</Text>
