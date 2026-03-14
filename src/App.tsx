@@ -280,6 +280,17 @@ const MyCV = () => (
               Apprentissage pratique (SOC Level 1, Pre-Security) couvrant les frameworks (MITRE ATT&CK, Kill Chain) et l'utilisation d'outils d'analyse (Wireshark, Splunk, Zeek, Wazuh, SIEM, Forensics).
             </Text>
           </View>
+
+          <View>
+            <Text style={styles.itemTitle}>Programmation Système Rust -- Google (Comprehensive Rust)</Text>
+            <Link src="https://google.github.io/comprehensive-rust/" style={{ ...styles.itemSub, color: '#7D5BA6', textDecoration: 'underline' }}>
+              google.github.io/comprehensive-rust
+            </Link>
+            <Text style={styles.itemBody}>
+              Formation intensive sur la sécurité mémoire (Ownership, Borrowing), la gestion des ressources et la programmation concurrente sécurisée. Application des standards de développement utilisés chez Google pour les systèmes critiques.
+            </Text>
+          </View>
+          
         </View>
       </View>
     </Page>
