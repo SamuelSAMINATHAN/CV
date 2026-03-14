@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     backgroundColor: '#F9F9FB', 
     borderBottom: '1pt solid #E2E8F0',
-    padding: '20 30',
+    padding: '15 30', // Réduit de 20 à 15
     alignItems: 'center',
   },
   photoContainer: {
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
     objectPosition: 'center',
   },
   nameSubtle: {
-    fontSize: 9,
+    fontSize: 9.5, // Augmenté de 9 à 9.5
     fontWeight: 'bold',
     color: '#3D3D3D',
     textAlign: 'center',
@@ -69,20 +69,20 @@ const styles = StyleSheet.create({
     paddingLeft: 25,
   },
   searchTitle: {
-    fontSize: 18,
+    fontSize: 19, // Augmenté de 18 à 19
     fontWeight: 'bold',
     color: '#7D5BA6', 
     textTransform: 'uppercase',
     marginBottom: 2,
   },
   statusTag: {
-    fontSize: 10,
+    fontSize: 10.5, // Augmenté de 10 à 10.5
     color: '#D6A681',
     fontWeight: 'medium',
     marginBottom: 4,
   },
   searchDescription: {
-    fontSize: 8.5,
+    fontSize: 9, // Augmenté de 8.5 à 9
     color: '#4A5568',
     marginBottom: 8,
     lineHeight: 1.3,
@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   contactText: {
-    fontSize: 7.5,
+    fontSize: 8, // Augmenté de 7.5 à 8
     color: '#57606A',
   },
 
@@ -125,29 +125,29 @@ const styles = StyleSheet.create({
   sidebar: {
     width: '32%',
     backgroundColor: '#F9F9FB', 
-    padding: '12 18', // Réduit le padding vertical de 18 à 12
+    padding: '10 18', // Réduit de 12 à 10
     borderRight: '0.5pt solid #E2E8F0',
   },
   mainContent: {
     width: '68%',
-    padding: '12 18', // Réduit le padding vertical de 18 à 12
+    padding: '10 18', // Réduit de 12 à 10
   },
 
   // --- TYPOGRAPHIE ---
   sectionTitle: {
-    fontSize: 10,
+    fontSize: 10.5, // Augmenté de 10 à 10.5
     fontWeight: 'bold',
     color: '#7D5BA6',
     textTransform: 'uppercase',
     letterSpacing: 1.2,
-    marginTop: 8, // Réduit de 12 à 8
-    marginBottom: 4, // Réduit de 6 à 4
+    marginTop: 8, 
+    marginBottom: 4, 
     borderBottom: '0.5pt solid #F3EBF7',
     paddingBottom: 2,
   },
-  itemTitle: { fontSize: 10, fontWeight: 'bold', color: '#1A202C' },
-  itemSub: { fontSize: 8, color: '#D6A681', marginBottom: 2, fontWeight: 'medium' }, // Réduit marginBottom de 3 à 2
-  itemBody: { fontSize: 8, color: '#4A5568', lineHeight: 1.4, marginBottom: 6 }, // Réduit fontSize de 8.5 à 8 et marginBottom de 8 à 6
+  itemTitle: { fontSize: 10.5, fontWeight: 'bold', color: '#1A202C' }, // Augmenté de 10 à 10.5
+  itemSub: { fontSize: 8.5, color: '#D6A681', marginBottom: 2, fontWeight: 'medium' }, // Augmenté de 8 à 8.5
+  itemBody: { fontSize: 8.5, color: '#4A5568', lineHeight: 1.4, marginBottom: 6 }, // Augmenté de 8 à 8.5
   
   tagContainer: { flexDirection: 'row', flexWrap: 'wrap', gap: 5, marginBottom: 10 },
   tag: { 
@@ -163,8 +163,8 @@ const styles = StyleSheet.create({
   competenceHeader: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 8, // Augmenté de 4 à 8
-    marginTop: 10, // Augmenté de 4 à 10
+    marginBottom: 8, 
+    marginTop: 8, // Réduit de 10 à 8
   },
   competenceMainIcon: {
     width: 15,
@@ -172,12 +172,12 @@ const styles = StyleSheet.create({
     marginRight: 6,
   },
   competenceCategory: {
-    marginBottom: 10, // Augmenté de 6 à 10
+    marginBottom: 10, 
   },
   skillCategoryHeader: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 4, // Augmenté de 2 à 4
+    marginBottom: 4, 
   },
   skillCategoryIcon: {
     width: 12,
@@ -185,7 +185,7 @@ const styles = StyleSheet.create({
     marginRight: 4,
   },
   skillCategoryTitle: {
-    fontSize: 8.5,
+    fontSize: 9, // Augmenté de 8.5 à 9
     fontWeight: 'bold',
     color: '#3D3D3D',
   },
@@ -194,12 +194,12 @@ const styles = StyleSheet.create({
     marginBottom: 1,
   },
   skillLabel: {
-    fontSize: 7.5,
+    fontSize: 8, // Augmenté de 7.5 à 8
     fontWeight: 'bold',
     color: '#57606A',
   },
   skillValue: {
-    fontSize: 7.5,
+    fontSize: 8, // Augmenté de 7.5 à 8
     color: '#4A5568',
   },
 
@@ -207,15 +207,15 @@ const styles = StyleSheet.create({
   sectionHeader: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginTop: 4,
-    marginBottom: 2,
+    marginTop: 3, // Réduit de 4 à 3
+    marginBottom: 2, 
     borderBottom: '0.5pt solid #F3EBF7',
     paddingBottom: 2,
   },
-  sidebarSectionHeader: { // Nouveau style pour la barre de gauche uniquement
+  sidebarSectionHeader: { 
     flexDirection: 'row',
     alignItems: 'center',
-    marginTop: 18, // Espacement généreux pour la barre latérale
+    marginTop: 14, // Réduit de 18 à 14 pour gagner de l'espace pour le texte plus grand
     marginBottom: 6,
     borderBottom: '0.5pt solid #F3EBF7',
     paddingBottom: 2,
@@ -226,11 +226,11 @@ const styles = StyleSheet.create({
     marginRight: 5,
   },
   sectionTitleNoBorder: {
-    fontSize: 9.5, // Réduit de 10 à 9.5
+    fontSize: 10, // Augmenté de 9.5 à 10
     fontWeight: 'bold',
     color: '#7D5BA6',
     textTransform: 'uppercase',
-    letterSpacing: 1.1, // Réduit de 1.2 à 1.1
+    letterSpacing: 1.1, 
   },
 
   // --- STYLES POUR LES LOGOS D'ENTREPRISE/ÉCOLE ---
