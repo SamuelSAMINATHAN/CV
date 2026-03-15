@@ -491,12 +491,11 @@ const MyCV = () => (
               
               <View style={styles.timelineEvent}>
                 <View style={styles.timelineDot} />
-                <View style={styles.itemDateTag}><Text style={styles.itemDateText}>2023 - 2028</Text></View>
                 <View style={styles.itemHeader}>
                   <Text style={styles.itemTitle}>ISEP - École d'ingénieurs du numérique</Text>
                   <Image src={logoIsep} style={styles.logo} />
                 </View>
-                <Text style={styles.itemSub}>Cycle Ingénieur • Paris</Text>
+                <Text style={styles.itemSub}>Cycle Ingénieur • Paris 2023 - 2028</Text>
                 <Text style={styles.itemBody}>
                   Formation d’ingénieur généraliste du numérique incluant le développement Web, l'algorithmique, les réseaux, la cybersécurité et l'électronique, complétée par une solide base en gestion de projet et sciences des données. Projet notable : 
                 </Text>
@@ -542,7 +541,7 @@ const MyCV = () => (
                   • Développement intégral du front-end d'un site vitrine de 7 pages (Home, Whole Spices, Blended Masalas, Ground Spices, Rice, Oil & Extracts, et Contact Us.).
                 </Text>
                 <Text style={styles.itemBody}>
-                  • Respect rigoureux du cahier des charges et reporting hebdomadaire sur l'avancement des fonctionnalités responsives.
+                  • Respect rigoureux du cahier des charges et reporting hebdomadaire sur l'avancement du projet.
                 </Text>
               </View>
 
@@ -579,7 +578,7 @@ const MyCV = () => (
               <View style={styles.timelineEvent}>
                 <View style={styles.timelineDot} />
                 <View style={styles.itemHeader}>
-                  <Text style={styles.itemTitle}>Silicon Days - Capgemini</Text>
+                  <Text style={styles.itemTitle}>Silicon Days - Capgemini </Text>
                   <Image src={logoCapgemini} style={styles.logo} />
                 </View>
                 <Text style={styles.itemSub}>IA avant, pendant et après un incident cyber</Text>
