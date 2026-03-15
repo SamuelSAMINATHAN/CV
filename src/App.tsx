@@ -40,25 +40,24 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     backgroundColor: '#F9F9FB', 
     borderBottom: '1pt solid #E2E8F0',
-    padding: '10 30', // Réduit de 15 à 10
+    padding: '6 20', 
     alignItems: 'center',
   },
   photoContainer: {
     alignItems: 'center',
-    width: 90,
+    width: 80,
   },
   photo: {
-    width: 80,
-    height: 80,
-    borderRadius: 40, // Moitié de la taille pour un cercle parfait
+    width: 70,
+    height: 70,
+    borderRadius: 35, 
     border: '1.5pt solid #1E40AF',
-    marginBottom: 5,
-    // --- LES DEUX LIGNES CI-DESSOUS RÉPARENT TA PHOTO ---
+    marginBottom: 4,
     objectFit: 'cover', 
     objectPosition: 'center',
   },
   nameSubtle: {
-    fontSize: 10, // Augmenté de 9.5 à 10
+    fontSize: 9.5, 
     fontWeight: 'bold',
     color: '#3D3D3D',
     textAlign: 'center',
@@ -66,54 +65,54 @@ const styles = StyleSheet.create({
   },
   headerRight: {
     flex: 1,
-    paddingLeft: 25,
+    paddingLeft: 20,
   },
   searchTitle: {
-    fontSize: 20, // Augmenté de 19 à 20
+    fontSize: 18, 
     fontWeight: 'bold',
     color: '#1E40AF', 
     textTransform: 'uppercase',
     marginBottom: 2,
   },
   statusTag: {
-    fontSize: 11, // Augmenté de 10.5 à 11
+    fontSize: 10, 
     color: '#D6A681',
     fontWeight: 'medium',
-    marginBottom: 4,
+    marginBottom: 3,
   },
   searchDescription: {
-    fontSize: 9.5, // Augmenté de 9 à 9.5
+    fontSize: 9, 
     color: '#4A5568',
-    marginBottom: 6, // Réduit de 8 à 6
-    lineHeight: 1.3,
-    maxWidth: '90%',
+    marginBottom: 4, 
+    lineHeight: 1.2,
+    maxWidth: '95%',
   },
   
   // --- CONTACTS ---
   contactGrid: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    columnGap: 10,
-    rowGap: 4,
+    columnGap: 8,
+    rowGap: 2,
   },
   contactItem: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 2,
+    marginBottom: 1,
   },
   contactIcon: {
-    width: 10,
-    height: 10,
+    width: 9,
+    height: 9,
     marginRight: 4,
   },
   bullet: {
     color: '#1E40AF',
-    fontSize: 10,
+    fontSize: 9,
     marginRight: 3,
     fontWeight: 'bold',
   },
   contactText: {
-    fontSize: 8.5, // Augmenté de 8 à 8.5
+    fontSize: 8, 
     color: '#57606A',
   },
 
@@ -123,38 +122,38 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   sidebar: {
-    width: '32%',
+    width: '25%',
     backgroundColor: '#F9F9FB', 
-    padding: '6 18', // Réduit de 10 à 6
+    padding: '4 10', 
     borderRight: '0.5pt solid #E2E8F0',
   },
   mainContent: {
-    width: '68%',
-    padding: '6 18', // Réduit de 10 à 6
+    width: '75%',
+    padding: '6 12', 
   },
 
   // --- TYPOGRAPHIE ---
   sectionTitle: {
-    fontSize: 11, // Augmenté de 10.5 à 11
+    fontSize: 10.5, 
     fontWeight: 'bold',
     color: '#1E40AF',
     textTransform: 'uppercase',
-    letterSpacing: 1.2,
-    marginTop: 6, // Réduit de 8 à 6
-    marginBottom: 3, // Réduit de 4 à 3
+    letterSpacing: 1.1,
+    marginTop: 4, 
+    marginBottom: 2, 
     borderBottom: '0.5pt solid #F3EBF7',
-    paddingBottom: 2,
+    paddingBottom: 1,
   },
-  itemTitle: { fontSize: 11, fontWeight: 'bold', color: '#1A202C' }, // Augmenté de 10.5 à 11
-  itemSub: { fontSize: 9, color: '#D6A681', marginBottom: 2, fontWeight: 'medium' }, // Augmenté de 8.5 à 9
-  itemBody: { fontSize: 9, color: '#4A5568', lineHeight: 1.4, marginBottom: 5 }, // Augmenté de 8.5 à 9 et marginBottom réduit de 6 à 5
+  itemTitle: { fontSize: 10.5, fontWeight: 'bold', color: '#1A202C' }, 
+  itemSub: { fontSize: 8.5, color: '#D6A681', marginBottom: 1, fontWeight: 'medium' }, 
+  itemBody: { fontSize: 8.5, color: '#4A5568', lineHeight: 1.25, marginBottom: 3 }, 
   
-  tagContainer: { flexDirection: 'row', flexWrap: 'wrap', gap: 5, marginBottom: 6 }, // Réduit de 10 à 6
+  tagContainer: { flexDirection: 'row', flexWrap: 'wrap', gap: 4, marginBottom: 4 }, 
   tag: { 
     backgroundColor: '#F3EBF7', 
     color: '#1E40AF', 
-    fontSize: 8, 
-    padding: '4 8', 
+    fontSize: 7.5, 
+    padding: '3 6', 
     borderRadius: 4,
     fontWeight: 'medium'
   },
@@ -163,43 +162,43 @@ const styles = StyleSheet.create({
   competenceHeader: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 6, 
-    marginTop: 6, // Réduit de 8 à 6
+    marginBottom: 4, 
+    marginTop: 4, 
   },
   competenceMainIcon: {
-    width: 15,
-    height: 15,
+    width: 13,
+    height: 13,
     marginRight: 6,
   },
   competenceCategory: {
-    marginBottom: 8, // Réduit de 10 à 8
+    marginBottom: 6, 
   },
   skillCategoryHeader: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 2, 
+    marginBottom: 1, 
   },
   skillCategoryIcon: {
-    width: 12,
-    height: 12,
+    width: 11,
+    height: 11,
     marginRight: 4,
   },
   skillCategoryTitle: {
-    fontSize: 9.5, // Augmenté de 9 à 9.5
+    fontSize: 9, 
     fontWeight: 'bold',
     color: '#3D3D3D',
   },
   skillItem: {
-    marginLeft: 16,
-    marginBottom: 1,
+    marginLeft: 14,
+    marginBottom: 0,
   },
   skillLabel: {
-    fontSize: 8.5, // Augmenté de 8 à 8.5
+    fontSize: 8, 
     fontWeight: 'bold',
     color: '#57606A',
   },
   skillValue: {
-    fontSize: 8.5, // Augmenté de 8 à 8.5
+    fontSize: 8, 
     color: '#4A5568',
   },
 
@@ -207,7 +206,7 @@ const styles = StyleSheet.create({
   sectionHeader: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginTop: 2, // Réduit de 3 à 2
+    marginTop: 2, 
     marginBottom: 2, 
     borderBottom: '0.5pt solid #F3EBF7',
     paddingBottom: 2,
@@ -215,34 +214,115 @@ const styles = StyleSheet.create({
   sidebarSectionHeader: { 
     flexDirection: 'row',
     alignItems: 'center',
-    marginTop: 10, // Réduit de 14 à 10
-    marginBottom: 4, // Réduit de 6 à 4
+    marginTop: 8, 
+    marginBottom: 3, 
     borderBottom: '0.5pt solid #F3EBF7',
-    paddingBottom: 2,
+    paddingBottom: 1,
   },
   sectionIcon: {
-    width: 12,
-    height: 12,
+    width: 11,
+    height: 11,
     marginRight: 5,
   },
   sectionTitleNoBorder: {
-    fontSize: 10.5, // Augmenté de 10 à 10.5
+    fontSize: 10, 
     fontWeight: 'bold',
     color: '#1E40AF',
     textTransform: 'uppercase',
-    letterSpacing: 1.1, 
+    letterSpacing: 1, 
+  },
+
+  // --- STRUCTURE EN ILOTS (CARDS) ---
+  sectionCard: {
+    backgroundColor: '#FFFFFF',
+    borderRadius: 8,
+    padding: '6 12',
+    marginBottom: 8,
+    border: '0.5pt solid #E2E8F0',
+    borderBottom: '1.2pt solid #E2E8F0',
+  },
+  sectionCardHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 6,
+  },
+  sectionIconBg: {
+    backgroundColor: '#DBEAFE', 
+    width: 20,
+    height: 20,
+    borderRadius: 4,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginRight: 8,
+  },
+  sectionIconWhite: {
+    width: 11,
+    height: 11,
+  },
+  sectionTitleMain: {
+    fontSize: 10.5,
+    fontWeight: 'bold',
+    color: '#1A202C',
+    textTransform: 'uppercase',
+  },
+
+  // --- TIMELINE INTERNE ---
+  timelineContainer: {
+    position: 'relative',
+    paddingLeft: 18,
+    paddingTop: 4,
+  },
+  timelineLine: {
+    position: 'absolute',
+    left: 7,
+    top: 12,
+    bottom: 8,
+    width: 1.2,
+    backgroundColor: '#1E40AF', 
+    opacity: 0.2,
+  },
+  timelineEvent: {
+    position: 'relative',
+    marginBottom: 8,
+  },
+  timelineDot: {
+    position: 'absolute',
+    left: -15,
+    top: 2,
+    width: 7,
+    height: 7,
+    borderRadius: 3.5,
+    backgroundColor: '#1E40AF',
+    border: '1.5pt solid #FFFFFF',
+    zIndex: 1,
+  },
+  itemDateTag: {
+    backgroundColor: '#F1F5F9',
+    borderRadius: 8,
+    padding: '1 6',
+    flexDirection: 'row',
+    alignItems: 'center',
+    border: '0.5pt solid #E2E8F0',
+    position: 'absolute',
+    right: 0,
+    top: 0,
+  },
+  itemDateText: {
+    fontSize: 7,
+    color: '#64748B',
+    fontWeight: 'medium',
   },
 
   // --- STYLES POUR LES LOGOS D'ENTREPRISE/ÉCOLE ---
   itemHeader: {
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between', // Logos à droite
-    marginBottom: 2,
+    justifyContent: 'space-between', 
+    marginBottom: 1,
   },
   logo: {
-    width: 32, // Agrandissement de 22 à 32
-    height: 32, // Agrandissement de 22 à 32
+    width: 24, 
+    height: 24, 
     marginLeft: 8,
     objectFit: 'contain',
   },
@@ -394,106 +474,151 @@ const MyCV = () => (
         </View>
 
 
-        {/* COLONNE DROITE (Expériences & Formation) */}
+        {/* COLONNE DROITE (Main Content avec Ilots) */}
         <View style={styles.mainContent}>
 
-          <View style={styles.sectionHeader}>
-            <Image src={iconFormation} style={styles.sectionIcon} />
-            <Text style={styles.sectionTitleNoBorder}>Formation</Text>
-          </View>
-          <View>
-            <View style={styles.itemHeader}>
-              <Text style={styles.itemTitle}>ISEP - École d'ingénieurs du numérique</Text>
-              <Image src={logoIsep} style={styles.logo} />
+          {/* SECTION FORMATION */}
+          <View style={styles.sectionCard}>
+            <View style={styles.sectionCardHeader}>
+              <View style={styles.sectionIconBg}>
+                <Image src={iconFormation} style={styles.sectionIconWhite} />
+              </View>
+              <Text style={styles.sectionTitleMain}>Formation</Text>
             </View>
-            <Text style={styles.itemSub}>Cycle Ingénieur • 2023 - 2028</Text>
-            <Text style={{ ...styles.itemBody, marginBottom: 4 }}>
-              Formation d’ingénieur généraliste du numérique incluant le développement Web, l'algorithmique, les réseaux, la cybersécurité et l'électronique, complétée par une solide base en gestion de projet et sciences des données. Projet notable : 
-            </Text>
-            <View style={{ marginLeft: 8, marginTop: 4 }}>
-              <Text style={styles.itemTitle}>• Laboratoire Simulation DDoS & Détection</Text>
-              <Text style={{ ...styles.itemBody, marginBottom: 2 }}>Simulation d'attaques (L3-L7) sur réseau isolé (Kali, Metasploitable) avec détection via Suricata et Wazuh.</Text>
 
-              <Text style={styles.itemTitle}>• Portefeuille Numérique (Java)</Text>
-              <Text style={{ ...styles.itemBody, marginBottom: 2 }}>Application de gestion de portefeuille avec historique de transactions sécurisées.</Text>
+            <View style={styles.timelineContainer}>
+              <View style={styles.timelineLine} />
+              
+              <View style={styles.timelineEvent}>
+                <View style={styles.timelineDot} />
+                <View style={styles.itemDateTag}><Text style={styles.itemDateText}>2023 - 2028</Text></View>
+                <View style={styles.itemHeader}>
+                  <Text style={styles.itemTitle}>ISEP - École d'ingénieurs du numérique</Text>
+                  <Image src={logoIsep} style={styles.logo} />
+                </View>
+                <Text style={styles.itemSub}>Cycle Ingénieur • Paris</Text>
+                <Text style={styles.itemBody}>
+                  Formation d’ingénieur généraliste du numérique incluant le développement Web, l'algorithmique, les réseaux, la cybersécurité et l'électronique, complétée par une solide base en gestion de projet et sciences des données. Projet notable : 
+                </Text>
+                <View style={{ marginLeft: 8, marginTop: 4 }}>
+                  <Text style={styles.itemTitle}>• Laboratoire Simulation DDoS & Détection</Text>
+                  <Text style={{ ...styles.itemBody, marginBottom: 2 }}>Simulation et détection d’attaques variées : Portscan, Protocolaires (SYN flooding, Teardrop), Applicatives (HTTP Floods, Slowloris) et Amplification/Réflexion (DNS). Analyse via Suricata et Wazuh.</Text>
 
-              <Text style={styles.itemTitle}>• Site Web Logement Étudiant avec 2FA</Text>
-              <Text style={{ ...styles.itemBody, marginBottom: 2 }}>Plateforme PHP/HTML/CSS intégrant une authentification à deux facteurs.</Text>
+                  <Text style={styles.itemTitle}>• Portefeuille Numérique (Java)</Text>
+                  <Text style={{ ...styles.itemBody, marginBottom: 2 }}>Application de gestion de portefeuille avec historique de transactions sécurisées.</Text>
+
+                  <Text style={styles.itemTitle}>• Site Web Logement Étudiant avec 2FA</Text>
+                  <Text style={{ ...styles.itemBody, marginBottom: 2 }}>Plateforme PHP/HTML/CSS intégrant une authentification à deux facteurs.</Text>
+                </View>
+              </View>
+
+              <View style={styles.timelineEvent}>
+                <View style={styles.timelineDot} />
+                <View style={styles.itemDateTag}><Text style={styles.itemDateText}>2021</Text></View>
+                <Text style={styles.itemTitle}>Baccalauréat Général - Lycée L’ÉSPERANCE</Text>
+                <Text style={styles.itemBody}>Mention Assez Bien. Spécialités : SVT, Physique-Chimie, Maths complémentaires.</Text>
+              </View>
             </View>
-            
-            <Text style={styles.itemTitle}>Baccalauréat Général - Lycée L’ÉSPERANCE</Text>
-            <Text style={styles.itemSub}>2021</Text>
-            <Text style={styles.itemBody}>Mention Assez Bien. Spécialités : SVT, Physique-Chimie, Maths complémentaires.</Text>
           </View>
 
-          
-          <View style={styles.sectionHeader}>
-            <Image src={iconPro} style={styles.sectionIcon} />
-            <Text style={styles.sectionTitleNoBorder}>Expériences Professionnelles</Text>
-          </View>
-          <View>
-            <Text style={styles.itemTitle}>Développeur Web (Stage) - Cokomasala</Text>
-            <Text style={styles.itemSub}>Mars. 2025 - Juillet 2025 •Inde</Text>
-            <Text style={styles.itemBody}>
-              • Conception et développement d'un site vitrine pour l'entreprise.{"\n"}
-              • Technologies : HTML, CSS, JavaScript et intégration de contenu.
-            </Text>
-
-            <Text style={styles.itemTitle}>Guichetier - TTEUROPE / Western Union</Text>
-            <Text style={styles.itemSub}>Fév. 2022 - Août 2023 • Paris</Text>
-            <Text style={styles.itemBody}>
-              • Traitement des transferts internationaux via la plateforme Western Union.{"\n"}
-              • Manipulation de données sensibles et gestion d’incidents opérationnels.
-            </Text>
-          </View>
-
-          <View style={styles.sectionHeader}>
-            <Image src={iconPro} style={styles.sectionIcon} />
-            <Text style={styles.sectionTitleNoBorder}>Hackathons</Text>
-          </View>
-          <View>
-            <View style={styles.itemHeader}>
-              <Text style={styles.itemTitle}>Silicon Days - Capgemini</Text>
-              <Image src={logoCapgemini} style={styles.logo} />
+          {/* SECTION EXPÉRIENCES */}
+          <View style={styles.sectionCard}>
+            <View style={styles.sectionCardHeader}>
+              <View style={styles.sectionIconBg}>
+                <Image src={iconPro} style={styles.sectionIconWhite} />
+              </View>
+              <Text style={styles.sectionTitleMain}>Expériences Professionnelles</Text>
             </View>
-            <Text style={styles.itemSub}>Sujet : L'IA avant,pendant et après un incident cyber</Text>
-            <Text style={styles.itemBody}>
-              • Développement d'un Auto-encodeur pour la détection d'anomalies avec Data Cleaning avancé pour l'entraînement de données eBPF.{"\n"}
-              • Corrélation via GNN pour le mapping MITRE ATT&CK et export SIEM vers Wazuh. {"\n"}
-              • Technologies : PyTorch, Machine Learning, eBPF, Wazuh, SIEM.
-            </Text>
+
+            <View style={styles.timelineContainer}>
+              <View style={styles.timelineLine} />
+
+              <View style={styles.timelineEvent}>
+                <View style={styles.timelineDot} />
+                <View style={styles.itemDateTag}><Text style={styles.itemDateText}>Mars 2025 - Juil 2025</Text></View>
+                <Text style={styles.itemTitle}>Développeur Web (Stage) - Cokomasala</Text>
+                <Text style={styles.itemSub}>Inde</Text>
+                <Text style={styles.itemBody}>
+                  • Développement intégral du front-end d'un site vitrine de 7 pages (Home, Whole Spices, Blended Masalas, Ground Spices, Rice, Oil & Extracts, et Contact Us.).
+                </Text>
+                <Text style={styles.itemBody}>
+                  • Respect rigoureux du cahier des charges et reporting hebdomadaire sur l'avancement des fonctionnalités responsives.
+                </Text>
+              </View>
+
+              <View style={styles.timelineEvent}>
+                <View style={styles.timelineDot} />
+                <View style={styles.itemDateTag}><Text style={styles.itemDateText}>Fév 2022 - Août 2023</Text></View>
+                <Text style={styles.itemTitle}>Guichetier - TTEUROPE / Western Union</Text>
+                <Text style={styles.itemSub}>Paris - Gare du Nord</Text>
+                <Text style={styles.itemBody}>
+                  • Gestion de flux critiques (30+ clients/jour) dans un environnement haute pression.
+                </Text>
+                <Text style={styles.itemBody}>
+                  • Sang-froid et gestion de conflits : résolution de situations tendues et traitement des blocages de fonds en lien avec le service client.
+                </Text>
+                <Text style={styles.itemBody}>
+                  • Conformité bancaire : manipulation de données sensibles et de fonds avec application stricte des procédures KYC/AML (Lutte anti-blanchiment).
+                </Text>
+              </View>
+            </View>
           </View>
 
-          <View style={styles.sectionHeader}>
-            <Image src={iconCompetence} style={styles.sectionIcon} />
-            <Text style={styles.sectionTitleNoBorder}>Projets personnels</Text>
-          </View>
-          <View>
-            <View style={styles.itemHeader}>
-              <Text style={styles.itemTitle}>Formation en cybersécurité -- TryHackMe</Text>
-              <Image src={logoTryHackMe} style={styles.logo} />
+          {/* SECTION HACKATHONS & PROJETS */}
+          <View style={styles.sectionCard}>
+            <View style={styles.sectionCardHeader}>
+              <View style={styles.sectionIconBg}>
+                <Image src={iconCompetence} style={styles.sectionIconWhite} />
+              </View>
+              <Text style={styles.sectionTitleMain}>Hackathons et Projets</Text>
             </View>
-            <Link src="https://tryhackme.com/p/Samuel404" style={{ ...styles.itemSub, color: '#1E40AF', textDecoration: 'underline' }}>
-              tryhackme.com/p/Samuel404
-            </Link>
-            <Text style={styles.itemBody}>
-              Apprentissage pratique (SOC Level 1, Pre-Security) couvrant les frameworks (MITRE ATT&CK, Kill Chain) et l'utilisation d'outils d'analyse (Wireshark, Splunk, Zeek, Wazuh, SIEM, Forensics).
-            </Text>
-          </View>
 
-          <View>
-            <View style={styles.itemHeader}>
-              <Text style={styles.itemTitle}>Programmation Système Rust -- Google (Comprehensive Rust)</Text>
-              <Image src={logoRust} style={styles.logo} />
+            <View style={styles.timelineContainer}>
+              <View style={styles.timelineLine} />
+
+              <View style={styles.timelineEvent}>
+                <View style={styles.timelineDot} />
+                <View style={styles.itemHeader}>
+                  <Text style={styles.itemTitle}>Silicon Days - Capgemini</Text>
+                  <Image src={logoCapgemini} style={styles.logo} />
+                </View>
+                <Text style={styles.itemSub}>IA avant, pendant et après un incident cyber</Text>
+                <Text style={styles.itemBody}>
+                  • Développement d'un Auto-encodeur pour la détection d'anomalies (eBPF).{"\n"}
+                  • Corrélation via GNN pour le mapping MITRE ATT&CK et export SIEM vers Wazuh. {"\n"}
+                  • Technologies : PyTorch, Machine Learning, eBPF, Wazuh, SIEM.
+                </Text>
+              </View>
+
+              <View style={styles.timelineEvent}>
+                <View style={styles.timelineDot} />
+                <View style={styles.itemHeader}>
+                  <Text style={styles.itemTitle}>Formation en cybersécurité - TryHackMe</Text>
+                  <Image src={logoTryHackMe} style={styles.logo} />
+                </View>
+                <Link src="https://tryhackme.com/p/Samuel404" style={{ ...styles.itemSub, color: '#1E40AF', textDecoration: 'underline' }}>
+                  tryhackme.com/p/Samuel404
+                </Link>
+                <Text style={styles.itemBody}>
+                  Niveau Saphir (Top 1%), 15 badges, 86 machines complétées. Focus : SOC Level 1 et Pre-Security.
+                </Text>
+              </View>
+
+              <View style={styles.timelineEvent}>
+                <View style={styles.timelineDot} />
+                <View style={styles.itemHeader}>
+                  <Text style={styles.itemTitle}>Rust - Google (Comprehensive Rust)</Text>
+                  <Image src={logoRust} style={styles.logo} />
+                </View>
+                <Link src="https://google.github.io/comprehensive-rust/" style={{ ...styles.itemSub, color: '#1E40AF', textDecoration: 'underline' }}>  
+                  google.github.io/comprehensive-rust
+                </Link>
+                <Text style={styles.itemBody}>
+                  Cursus Comprehensive Rust (4-day class). Maîtrise de l’Ownership et du Borrowing pour les systèmes critiques.
+                </Text>
+              </View>
             </View>
-            <Link src="https://google.github.io/comprehensive-rust/" style={{ ...styles.itemSub, color: '#1E40AF', textDecoration: 'underline' }}>  
-              google.github.io/comprehensive-rust
-            </Link>
-            <Text style={styles.itemBody}>
-              Formation intensive sur la sécurité mémoire (Ownership, Borrowing), la gestion des ressources et la programmation concurrente sécurisée. Application des standards de développement utilisés chez Google pour les systèmes critiques.
-            </Text>
           </View>
-          
           
         </View>
       </View>
