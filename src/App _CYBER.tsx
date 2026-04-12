@@ -352,7 +352,7 @@ const MyCV = () => (
         </View>
         
         <View style={styles.headerRight}>
-          <Text style={styles.searchTitle}>Ingénieur Système et Réseau</Text>
+          <Text style={styles.searchTitle}>Ingénieur en Cybersécurité</Text>
           <Text style={styles.statusTag}>Recherche alternance de deux ans (septembre 2026 – août 2028)</Text>
           <Text style={styles.searchDescription}>
           Passionné par la cybersécurité et par l'informatique, je suis un étudiant motivé, rigoureux et prêt à m'investir pleinement pour relever de nouveaux défis.

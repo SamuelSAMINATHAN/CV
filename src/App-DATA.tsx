@@ -352,10 +352,10 @@ const MyCV = () => (
         </View>
         
         <View style={styles.headerRight}>
-          <Text style={styles.searchTitle}>Ingénieur Système et Réseau</Text>
+          <Text style={styles.searchTitle}>Ingénieur en Data</Text>
           <Text style={styles.statusTag}>Recherche alternance de deux ans (septembre 2026 – août 2028)</Text>
           <Text style={styles.searchDescription}>
-          Passionné par la cybersécurité et par l'informatique, je suis un étudiant motivé, rigoureux et prêt à m'investir pleinement pour relever de nouveaux défis.
+          Passionné par la Data et par l'informatique, je suis un étudiant motivé, rigoureux et prêt à m'investir pleinement pour relever de nouveaux défis.
 
           </Text>
           
@@ -388,7 +388,7 @@ const MyCV = () => (
         {/* COLONNE GAUCHE (Compétences & Certifs) */}
 
         
-        <View style={styles.sidebar}>
+ <View style={styles.sidebar}>
           {/* Section Compétences avec icône principale */}
           <View style={styles.competenceHeader}>
             <Image src={iconCompetence} style={styles.competenceMainIcon} />
@@ -405,7 +405,22 @@ const MyCV = () => (
               <Text><Text style={styles.skillLabel}>OS : </Text><Text style={styles.skillValue}>Linux, Bash, PowerShell, VirtualBox</Text></Text>
             </View>
             <View style={styles.skillItem}>
-              <Text><Text style={styles.skillLabel}>Sécurité & Réseau : </Text><Text style={styles.skillValue}>Wireshark, Wazuh, pfSense</Text></Text>
+              <Text><Text style={styles.skillLabel}>Sécurité : </Text><Text style={styles.skillValue}>Wireshark, Wazuh, pfSense</Text></Text>
+            </View>
+          </View>
+
+          {/* Data & Analyse (Nouvelle Section) */}
+          <View style={styles.competenceCategory}>
+            <View style={styles.skillCategoryHeader}>
+              {/* Utilise une icône appropriée ou iconBureau par défaut */}
+              <Image src={iconBureau} style={styles.skillCategoryIcon} />
+              <Text style={styles.skillCategoryTitle}>Data & Analyse</Text>
+            </View>
+            <View style={styles.skillItem}>
+              <Text><Text style={styles.skillLabel}>BI & Visu : </Text><Text style={styles.skillValue}>Tableau, Power BI, Excel avancé</Text></Text>
+            </View>
+            <View style={styles.skillItem}>
+              <Text><Text style={styles.skillLabel}>Langages : </Text><Text style={styles.skillValue}>R, SQL, Python (Pandas/NumPy)</Text></Text>
             </View>
           </View>
 
@@ -416,7 +431,7 @@ const MyCV = () => (
               <Text style={styles.skillCategoryTitle}>Développement</Text>
             </View>
             <View style={styles.skillItem}>
-              <Text><Text style={styles.skillLabel}>Langages : </Text><Text style={styles.skillValue}>Python, C, Rust, Java, PHP, SQL</Text></Text>
+              <Text><Text style={styles.skillLabel}>Back-end : </Text><Text style={styles.skillValue}>C, Rust, Java, PHP</Text></Text>
             </View>
             <View style={styles.skillItem}>
               <Text><Text style={styles.skillLabel}>Web : </Text><Text style={styles.skillValue}>React, HTML, CSS</Text></Text>
@@ -427,10 +442,10 @@ const MyCV = () => (
           <View style={styles.competenceCategory}>
             <View style={styles.skillCategoryHeader}>
               <Image src={iconBureau} style={styles.skillCategoryIcon} />
-              <Text style={styles.skillCategoryTitle}>Bureautique & Outils</Text>
+              <Text style={styles.skillCategoryTitle}>Outils</Text>
             </View>
             <View style={styles.skillItem}>
-              <Text><Text style={styles.skillLabel}>Logiciels : </Text><Text style={styles.skillValue}>Suite Office, LaTeX</Text></Text>
+              <Text><Text style={styles.skillValue}>Suite Office, LaTeX, Git</Text></Text>
             </View>
           </View>
 
@@ -444,10 +459,10 @@ const MyCV = () => (
               <Text><Text style={styles.skillLabel}>Analyse : </Text><Text style={styles.skillValue}>Esprit analytique, Rigueur, Curiosité</Text></Text>
             </View>
             <View style={styles.skillItem}>
-              <Text><Text style={styles.skillLabel}>Relationnel : </Text><Text style={styles.skillValue}>Travail en équipe, Communication, Organisation</Text></Text>
+              <Text><Text style={styles.skillLabel}>Relationnel : </Text><Text style={styles.skillValue}>Travail en équipe, Communication</Text></Text>
             </View>
             <View style={styles.skillItem}>
-              <Text><Text style={styles.skillLabel}>Adaptabilité : </Text><Text style={styles.skillValue}>Fiabilité, Autonome</Text></Text>
+              <Text><Text style={styles.skillLabel}>Adaptabilité : </Text><Text style={styles.skillValue}>Fiabilité, Autonomie</Text></Text>
             </View>
           </View>
 
@@ -507,13 +522,13 @@ const MyCV = () => (
                 <Text style={styles.itemBody}>
                   Formation d’ingénieur généraliste du numérique incluant le développement Web, l'algorithmique, réseaux(CISCO/CCNA), la cybersécurité et l'électronique, complétée par une solide base en gestion de projet et sciences des données. Projet notable : 
                 </Text>
-                <View style={{ marginLeft: 8, marginTop: 4 }}>
-                                 <Text style={styles.itemTitle}>• Laboratoire Simulation DDoS & Détection</Text>
-                  <Text style={{ ...styles.itemBody, marginBottom: 2 }}>Simulation et détection d’attaques variées : Portscan, Protocolaires (SYN flooding, Teardrop), Applicatives (HTTP Floods, Slowloris) et Amplification/Réflexion (DNS). Analyse via Suricata et Wazuh.</Text>
-
-                  <Text style={styles.itemTitle}>• Site Web Logement Étudiant avec 2FA</Text>
-                  <Text style={{ ...styles.itemBody, marginBottom: 2 }}>Plateforme PHP/HTML/CSS intégrant une authentification à deux facteurs.</Text>
-                </View>
+<View style={{ marginLeft: 8, marginTop: 4 }}>
+  <Text style={styles.itemTitle}>• Analyse Statistique Descriptive sous R (Dataset Cats)</Text>
+  <Text style={{ ...styles.itemBody, marginBottom: 2 }}>
+    Étude biométrique sur les corrélations physiologiques (poids du corps vs poids du cœur). 
+    Mise en œuvre de statistiques univariées (indices de position/dispersion), analyse de distribution (histogrammes, boxplots) et étude de corrélation bivariée segmentée par sexe.
+  </Text>
+</View>
               </View>
 
               <View style={styles.timelineEvent}>
@@ -561,9 +576,6 @@ const MyCV = () => (
                 <Text style={styles.itemBody}>
                   • Sang-froid et gestion de conflits : résolution de situations tendues et traitement des blocages de fonds en lien avec le service client.
                 </Text>
-                <Text style={styles.itemBody}>
-                  • Conformité bancaire : manipulation de données sensibles et de fonds avec application stricte des procédures KYC/AML (Lutte anti-blanchiment).
-                </Text>
               </View>
             </View>
           </View>
@@ -593,32 +605,45 @@ const MyCV = () => (
                 </Text>
               </View>
 
-<View style={styles.timelineEvent}>
+{/* PROJET 2 : CHURN PREDICTION - FOCUS IMPACT & INTERPRÉTABILITÉ */}
+              <View style={styles.timelineEvent}>
                 <View style={styles.timelineDot} />
                 <View style={styles.itemHeader}>
-                  <Text style={styles.itemTitle}>Formation en cybersécurité - TryHackMe</Text>
-                  <Image src={logoTryHackMe} style={styles.logo} />
+                  <Text style={styles.itemTitle}>MLOps & Anticipation du Churn - Telco</Text>
                 </View>
-                <Link src="https://tryhackme.com/p/Samuel404" style={{ ...styles.itemSub, color: '#1E40AF', textDecoration: 'underline' }}>
-                  tryhackme.com/p/Samuel404
-                </Link>
                 <Text style={styles.itemBody}>
-                  Niveau Saphir (Top 1%), 15 badges, 86 machines complétées.SOC Level 1 et Pre-Security.
+                  • <Text style={{ fontWeight: 'bold' }}></Text> Pipeline XGBoost optimisé (Recall 86%, AUC 0.85) avec feature engineering complexe (Ratio Facturation, Tenure).{"\n"}
+                  • <Text style={{ fontWeight: 'bold' }}></Text> Analyse de causalité via SHAP, simulateur de ROI métier et recommandations de rétention ciblées.
+                </Text>
+              </View>
+
+              {/* PROJET 3 : A/B TESTING - FOCUS STATS & ENGINEERING */}
+              <View style={styles.timelineEvent}>
+                <View style={styles.timelineDot} />
+                <View style={styles.itemHeader}>
+                  <Text style={styles.itemTitle}>Inférence Statistique & A/B Testing</Text>
+                </View>
+                <Text style={styles.itemBody}>
+                  • <Text style={{ fontWeight: 'bold' }}> </Text> Évaluation de lift incrémental via Chi-deux et Inférence Bayésienne. Correction de biais SRM.{"\n"}
+                  • <Text style={{ fontWeight: 'bold' }}> </Text> Dashboard Streamlit d'optimisation budgétaire avec tests unitaires automatisés.
+                </Text>
+              </View>
+{/* PROJET 4 : OLIST E-COMMERCE */}
+              <View style={styles.timelineEvent}>
+                <View style={styles.timelineDot} />
+                <View style={styles.itemHeader}>
+                  <Text style={styles.itemTitle}>Data Engineering & Business BI - Olist</Text>
+                </View>
+                <Text style={styles.itemBody}>
+                  • <Text style={{ fontWeight: 'bold' }}></Text> Conception d'un schéma en étoile sur 9 tables SQL (100k commandes).{"\n"}
+                  • <Text style={{ fontWeight: 'bold' }}></Text> Segmentation RFM, Analyse de Cohorte et calcul de KPIs business.{"\n"}
+                  • <Text style={{ fontWeight: 'bold' }}></Text> Création d'un dashboard interactif sous <Text style={{ fontWeight: 'bold' }}>Power BI</Text> pour le suivi de la LTV et du CAC.
                 </Text>
               </View>
 
 
-             <View style={styles.timelineEvent}>
-                <View style={styles.timelineDot} />
-                <View style={styles.itemHeader}>
-                  <Text style={styles.itemTitle}>Extraction de mots de passe Wi-Fi - Rust (Windows)</Text>
-                  <Image src={logoRust} style={styles.logo} />
-                </View>
-                <Text style={styles.itemBody}>
-                  • Extraction de données système : Accès à l'API native Windows (WlanGetProfile) pour récupérer les profils réseau enregistrés.{"\n"}
-                  • Parsing & Sécurité : Conception d'un moteur d'analyse XML sécurisé pour extraire et décoder les clés WPA2 des fichiers de configuration système.
-                </Text>
-              </View>
+
+
             </View>
           </View>
           

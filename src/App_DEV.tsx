@@ -22,7 +22,7 @@ import iconPro from '../public/icons/pro.png';
 import logoIsep from '../public/icons/logo_isep.png';
 import logoCapgemini from '../public/icons/Capgemini_Logo.svg.png';
 import logoTryHackMe from '../public/icons/Plateforme_TryHackMe.png';
-import logoRust from '../public/icons/Rust_programming_language_black_logo.svg.png';
+import logoRust from '../public/icons/Java-Logo.jpg';
 
 // Importation des icônes de contact
 import iconEmail from '../public/icons/email.png';
@@ -352,10 +352,10 @@ const MyCV = () => (
         </View>
         
         <View style={styles.headerRight}>
-          <Text style={styles.searchTitle}>Ingénieur Système et Réseau</Text>
+          <Text style={styles.searchTitle}>Développeur Full Stack</Text>
           <Text style={styles.statusTag}>Recherche alternance de deux ans (septembre 2026 – août 2028)</Text>
           <Text style={styles.searchDescription}>
-          Passionné par la cybersécurité et par l'informatique, je suis un étudiant motivé, rigoureux et prêt à m'investir pleinement pour relever de nouveaux défis.
+          Passionné par le dev et par l'informatique, je suis un étudiant motivé, rigoureux et prêt à m'investir pleinement pour relever de nouveaux défis.
 
           </Text>
           
@@ -508,11 +508,18 @@ const MyCV = () => (
                   Formation d’ingénieur généraliste du numérique incluant le développement Web, l'algorithmique, réseaux(CISCO/CCNA), la cybersécurité et l'électronique, complétée par une solide base en gestion de projet et sciences des données. Projet notable : 
                 </Text>
                 <View style={{ marginLeft: 8, marginTop: 4 }}>
-                                 <Text style={styles.itemTitle}>• Laboratoire Simulation DDoS & Détection</Text>
-                  <Text style={{ ...styles.itemBody, marginBottom: 2 }}>Simulation et détection d’attaques variées : Portscan, Protocolaires (SYN flooding, Teardrop), Applicatives (HTTP Floods, Slowloris) et Amplification/Réflexion (DNS). Analyse via Suricata et Wazuh.</Text>
 
                   <Text style={styles.itemTitle}>• Site Web Logement Étudiant avec 2FA</Text>
-                  <Text style={{ ...styles.itemBody, marginBottom: 2 }}>Plateforme PHP/HTML/CSS intégrant une authentification à deux facteurs.</Text>
+                  <Text style={{ ...styles.itemBody, marginBottom: 2 }}>Plateforme PHP/HTML/CSS/JS intégrant une authentification à deux facteurs.</Text>
+
+                  <Text style={styles.itemTitle}>• Portefeuille Numérique (Java)</Text>
+<Text style={styles.itemBody}>
+  • Architecture MVC & APIs : Intégration en temps réel des cours (Coinbase, Yahoo Finance) et gestion automatisée des taux de change via API REST.
+</Text>
+<Text style={styles.itemBody}>
+  • Visualisation de données : Implémentation de graphiques dynamiques (Pie Chart, Line Chart) pour le suivi historique et la répartition sectorielle des actifs.
+</Text>
+             
                 </View>
               </View>
 
@@ -593,31 +600,21 @@ const MyCV = () => (
                 </Text>
               </View>
 
-<View style={styles.timelineEvent}>
-                <View style={styles.timelineDot} />
-                <View style={styles.itemHeader}>
-                  <Text style={styles.itemTitle}>Formation en cybersécurité - TryHackMe</Text>
-                  <Image src={logoTryHackMe} style={styles.logo} />
-                </View>
-                <Link src="https://tryhackme.com/p/Samuel404" style={{ ...styles.itemSub, color: '#1E40AF', textDecoration: 'underline' }}>
-                  tryhackme.com/p/Samuel404
-                </Link>
-                <Text style={styles.itemBody}>
-                  Niveau Saphir (Top 1%), 15 badges, 86 machines complétées.SOC Level 1 et Pre-Security.
-                </Text>
-              </View>
 
 
-             <View style={styles.timelineEvent}>
+              <View style={styles.timelineEvent}>
                 <View style={styles.timelineDot} />
                 <View style={styles.itemHeader}>
-                  <Text style={styles.itemTitle}>Extraction de mots de passe Wi-Fi - Rust (Windows)</Text>
-                  <Image src={logoRust} style={styles.logo} />
-                </View>
-                <Text style={styles.itemBody}>
-                  • Extraction de données système : Accès à l'API native Windows (WlanGetProfile) pour récupérer les profils réseau enregistrés.{"\n"}
-                  • Parsing & Sécurité : Conception d'un moteur d'analyse XML sécurisé pour extraire et décoder les clés WPA2 des fichiers de configuration système.
-                </Text>
+  <Text style={styles.itemTitle}>Projet d'Exploration Architecture - JHipster</Text>
+  {/* Optionnel : <Image src={logoJHipster} style={styles.logo} /> */}
+</View>
+<Text style={styles.itemBody}>
+  • Étude et fork d'une architecture fullstack générée via JHipster 9 (Spring Boot / Angular).{"\n"}
+  • Migration et configuration de la couche de persistance vers PostgreSQL.{"\n"}
+  • Personnalisation de l'interface utilisateur (Home Page) et analyse des workflows de build CI/CD.{"\n"}
+  • Objectif : Découverte approfondie d'une stack technique professionnelle et de l'automatisation logicielle.
+</Text>
+               
               </View>
             </View>
           </View>
