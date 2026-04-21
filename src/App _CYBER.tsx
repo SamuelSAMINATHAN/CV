@@ -353,7 +353,9 @@ const MyCV = () => (
         
         <View style={styles.headerRight}>
           <Text style={styles.searchTitle}>Ingénieur en Cybersécurité</Text>
-          <Text style={styles.statusTag}>Recherche alternance de deux ans (septembre 2026 – août 2028)</Text>
+          <Text style={styles.statusTag}>Recherche alternance de deux ans (septembre 2026 – août 2028)</Text> 
+          <Text style={styles.statusTag}>Rythme 3 jours en entreprise et 2 jours en formation</Text>
+          
           <Text style={styles.searchDescription}>
           Passionné par la cybersécurité et par l'informatique, je suis un étudiant motivé, rigoureux et prêt à m'investir pleinement pour relever de nouveaux défis.
 
@@ -537,32 +539,28 @@ const MyCV = () => (
             <View style={styles.timelineContainer}>
               <View style={styles.timelineLine} />
 
-              <View style={styles.timelineEvent}>
-                <View style={styles.timelineDot} />
-                <View style={styles.itemDateTag}><Text style={styles.itemDateText}>Mars 2025 - Juil 2025</Text></View>
-                <Text style={styles.itemTitle}>Développeur Web (Stage) - Cokomasala</Text>
-                <Text style={styles.itemSub}>Inde</Text>
-                <Text style={styles.itemBody}>
-                  • Développement intégral du front-end d'un site vitrine de 7 pages (Home, Whole Spices, Blended Masalas, Ground Spices, Rice, Oil & Extracts, et Contact Us.).
-                </Text>
-                <Text style={styles.itemBody}>
-                  • Respect rigoureux du cahier des charges et reporting hebdomadaire sur l'avancement du projet.
-                </Text>
-              </View>
 
-              <View style={styles.timelineEvent}>
+
+<View style={styles.timelineEvent}>
                 <View style={styles.timelineDot} />
-                <View style={styles.itemDateTag}><Text style={styles.itemDateText}>Fév 2022 - Août 2023</Text></View>
-                <Text style={styles.itemTitle}>Guichetier - TTEUROPE / Western Union</Text>
+                <View style={styles.itemDateTag}><Text style={styles.itemDateText}>Fév 2022 - Août 2022</Text></View>
+                <Text style={styles.itemTitle}>Agent de comptoir - TTEUROPE / Western Union</Text>
                 <Text style={styles.itemSub}>Paris - Gare du Nord</Text>
+                
                 <Text style={styles.itemBody}>
-                  • Gestion de flux critiques (30+ clients/jour) dans un environnement haute pression.
+                  • Gestion de flux financiers et relation client complexe : Accueil d'une clientèle internationale (flux de 40 à 100+ pers./jour), gestion des transferts Western Union et sécurisation des fonds (vérification manuelle de l'authenticité des billets).
                 </Text>
+                
                 <Text style={styles.itemBody}>
-                  • Sang-froid et gestion de conflits : résolution de situations tendues et traitement des blocages de fonds en lien avec le service client.
+                  • Médiation et Sang-froid : Résolution de situations critiques et conflictuelles (blocages de fonds, erreurs de saisie) en servant d'interface entre le service client et les usagers.
                 </Text>
+                
                 <Text style={styles.itemBody}>
-                  • Conformité bancaire : manipulation de données sensibles et de fonds avec application stricte des procédures KYC/AML (Lutte anti-blanchiment).
+                  • Support administratif et linguistique (Anglais C1) : Rédaction de courriers officiels (impôts, gouvernement) et de CV pour les clients; Traducteur technique pour le pôle réparation mobile.
+                </Text>
+                
+                <Text style={styles.itemBody}>
+                  • Initiative et Vente : Conseil client personnalisé sur les produits téléphoniques et création de supports de communication visuelle (Paint.net) pour augmenter la visibilité des services de la boutique.
                 </Text>
               </View>
             </View>

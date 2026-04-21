@@ -353,7 +353,9 @@ const MyCV = () => (
         
         <View style={styles.headerRight}>
           <Text style={styles.searchTitle}>Développeur Full Stack</Text>
-          <Text style={styles.statusTag}>Recherche alternance de deux ans (septembre 2026 – août 2028)</Text>
+          <Text style={styles.statusTag}>Recherche alternance de deux ans (septembre 2026 – août 2028)</Text> 
+          <Text style={styles.statusTag}>Rythme 3 jours en entreprise et 2 jours en formation</Text>
+          
           <Text style={styles.searchDescription}>
           Passionné par le dev et par l'informatique, je suis un étudiant motivé, rigoureux et prêt à m'investir pleinement pour relever de nouveaux défis.
 
